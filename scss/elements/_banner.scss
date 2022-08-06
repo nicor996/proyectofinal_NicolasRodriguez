@@ -1,0 +1,26 @@
+@import "../utilities/mixin";
+
+.banner{
+    @include bannerConfig;
+    background-image: url(../img/catering2.jpg);
+    h1 {
+        @include bannerText(white, 100px);
+    }
+    h2 {
+        background-color: rgba(255,166,0);
+        @include bannerText(black, 0px);  
+    }
+}
+
+.banner2{
+    @include bannerConfig;
+    background-image: url(../img/catering3.jpg);
+
+    h1 {
+        @include bannerText(white,100px);
+    }
+    h2 {
+        background-color: rgba(255,166,0);
+        @include bannerText(black, 0px);
+    }
+}

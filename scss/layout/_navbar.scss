@@ -1,0 +1,41 @@
+$navDim:(
+
+    big: 150px,
+    mid: 50px,
+    small: 20px,
+);
+
+
+.navbar img{
+    width: map-get($navDim, big);
+}
+.navbar-logo{
+    margin-left: map-get($navDim, mid);
+}
+
+.navbar-nav{
+    margin-left: map-get($navDim, mid);
+}
+
+.nav-item{
+    margin-left: map-get($navDim, sml);
+    a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        transition: 0.3s ease;
+    }
+    &:hover{
+        background-color: rgba(255,166,0);
+        box-shadow: 0 0 5px rgba(255,166,0),
+                     0 0 20px rgba(255,166,0),
+                     0 0 60px rgba(255,166,0),
+                     0 0 150px rgba(255,166,0);
+        color: black;
+    }
+
+}
+
+.onIt {
+    border-bottom: 2px solid rgba(255,166,0);
+}

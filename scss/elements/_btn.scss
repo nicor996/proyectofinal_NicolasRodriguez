@@ -1,0 +1,36 @@
+@import "../utilities/mixin";
+
+#btn1 button{
+    transition: 0.3s ease;
+    cursor: pointer;
+    @include btnConfig(200px); 
+}
+
+.botonYlw {
+    button {
+        &:hover{
+            background-color: rgba(255,166,0);
+            box-shadow: 0 0 5px rgba(255,166,0),
+                         0 0 20px rgba(255,166,0),
+                         0 0 60px rgba(255,166,0),
+                         0 0 150px rgba(255,166,0);
+        }
+    }
+}
+
+#btn3{
+    text-align: center;
+    button {
+        @include btnConfig(150px);
+        transition: 0.50s ease-in;
+        cursor: pointer;
+        &:hover{
+            background-color: black;
+            color: white;
+        }
+    }
+}
+
+.btn {
+    color: white;
+}
